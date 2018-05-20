@@ -94,6 +94,16 @@ li {
     width: 70vw
 }
 
+.fl-l{
+    float: left;
+}
+.fl-r{
+    float: right;
+}
+.t-l{
+    text-align: left;
+}
+
 .mask {
     position: fixed;
     z-index: 9999;
@@ -640,12 +650,12 @@ main img {
 }
 
 .s-post .inner-item {
-    background: #2f374a url(images/post.jpg) no-repeat;
+    background: #2f374a url(images/project-board5.jpg) no-repeat;
     background-size: cover
 }
 
-.s-post h1 {
-    color: #333
+.s-post h1, .s-post h2 {
+    color: #fbfbfb;
 }
 
 .s-anyway-tab .inner-item {
@@ -673,6 +683,142 @@ main img {
 .s-anyway-tab .item-btn,
 .s-anyway-tab .item-desc {
     color: #9d8b1e
+}
+
+.s-myhostelapp-tab .inner-item {
+    background: #81aaa6;
+}
+
+.s-myhostelapp-tab-img {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    right: 0;
+    transform: translate(3rem, 0);
+    opacity: 0
+}
+
+.s-myhostelapp-tab-img.in-view {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.s-myhostelapp-tab h1 {
+    color: #333
+}
+
+.s-myhostelapp-tab .item-btn,
+.s-myhostelapp-tab .item-desc {
+    color: #333
+}
+
+.s-greyegret-tab .inner-item {
+    border: 1px solid #e4e4e4;
+    background: #fbfbfb;
+}
+
+.s-greyegret-tab-img {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    right: 0;
+    transform: translate(3rem, 0);
+    opacity: 0
+}
+
+.s-greyegret-tab-img.in-view {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.s-greyegret-tab h1 {
+    color: #333
+}
+
+.s-greyegret-tab .item-btn,
+.s-greyegret-tab .item-desc {
+    color: #333
+}
+
+.s-1001causes-tab .inner-item {
+    background: #494949;
+}
+
+.s-1001causes-tab-img {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    right: 0;
+    transform: translate(3rem, 0);
+    opacity: 0
+}
+
+.s-1001causes-tab-img.in-view {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.s-1001causes-tab h1 {
+    color: #bbb
+}
+
+.s-1001causes-tab .item-btn,
+.s-1001causes-tab .item-tags {
+    color: #a8a8a8;
+}
+
+.s-joshuasgraphics .inner-item {
+    background: #f7f6f4;
+}
+
+.s-joshuasgraphics-img {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    right: 0;
+    transform: translate(3rem, 0);
+    opacity: 0
+}
+
+.s-joshuasgraphics-img.in-view {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.s-joshuasgraphics h1 {
+    color: #333
+}
+
+.s-joshuasgraphics .item-btn,
+.s-joshuasgraphics .item-tags {
+    color: #a8a8a8;
+}
+
+.s-fitfamfest-tab .inner-item {
+    background: #333333;
+}
+
+.s-fitfamfest-tab-img {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    right: 0;
+    transform: translate(3rem, 0);
+    opacity: 0
+}
+
+.s-fitfamfest-tab-img.in-view {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.s-fitfamfest-tab h1 {
+    color: #eee
+}
+
+.s-fitfamfest-tab .item-btn,
+.s-fitfamfest-tab .item-desc {
+    color: #eee
 }
 
 .s-clover .inner-item {
@@ -723,27 +869,27 @@ main img {
     transform: translate(-.7em, -1.6em) scale(1.03)
 }
 
-.s-iconmoon .inner-item {
-    background: #2f374a url(images/iconmoon-bg-2.jpg) no-repeat;
+.s-cm .inner-item {
+    background: #2f374a url(images/client-manager-screen.png) no-repeat;
     background-size: cover
 }
 
-.s-iconmoon .item-bg {
+.s-cm .item-bg {
     position: absolute;
     top: 0;
     width: 57%;
     left: 48%
 }
 
-.s-iconmoon h1 {
-    color: #00c1d3
+.s-cm h1 {
+    color: rgba(255, 255, 255, 0.63);
 }
 
-.s-iconmoon .item-desc {
+.s-cm .item-desc {
     color: #fff
 }
 
-.s-iconmoon .item-btn {
+.s-cm .item-btn {
     color: #fff
 }
 
@@ -849,6 +995,9 @@ footer {
 }
 
 @media screen and (max-width:1000px) {
+    .t-l{
+        text-align: left;
+    }
     .inner-item {
         height: auto
     }
@@ -926,7 +1075,7 @@ footer {
     .half-r .inner-item {
         margin: 1rem 1rem 0
     }
-    .item h1 {
+    .item h1, .item-main h2 {
         text-align: center
     }
     .item h1:before {
@@ -960,6 +1109,7 @@ footer {
     .about-4 .item-main {
         padding: 2rem 0 3rem
     }
+
 }
 
 .skill-icon{
@@ -975,7 +1125,7 @@ footer {
 }
 .skill-icon:hover{
 	transition: .1s all ease-in-out;
-	background: #ffe324;
+	background: #575757;
 	cursor: pointer;
 }
 
